@@ -1,0 +1,5 @@
+{
+  "name": "Be My Valentine?",
+  "description": "A cute interactive website asking the user to be a valentine, featuring a playful 'No' button that evades clicks and Gemini-powered romantic poetry generation.",
+  "requestFramePermissions": []
+}
