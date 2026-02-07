@@ -1,20 +1,33 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Be My Valentine? 💘
 
-# Run and deploy your AI Studio app
+A cute, interactive web experience designed to ask that special someone to be your Valentine.
 
-This contains everything you need to run your app locally.
+## ✨ Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1fMVcBGQDtA3faKhmmgMHRdbckmhtF3Ex
+- **Interactive UI**: A playful interface featuring a "No" button that playfully runs away from the user's cursor or touch.
+- **Celebration Mode**: Triggers confetti, music notes, and adorable animations when "Yes" is clicked.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **Cute Aesthetics**: Built with a soft pastel color palette, handwriting fonts, and adorable bear GIFs.
 
-## Run Locally
+## 🛠️ Tech Stack
 
-**Prerequisites:**  Node.js
+- **React** (TypeScript)
+- **Tailwind CSS** for styling
+- **Canvas Confetti** for particle effects
+- **Lucide React** for icons
 
+## 🚀 Getting Started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+This is a pure frontend application built with React and Vite conventions.
+
+1. Clone the repository
+2. Install dependencies
+3. Run the development server
+
+## 🎨 Credits
+
+- GIFs provided by Tenor
+- Icons by Lucide
+
+---
+*Made with ❤️ and Code*
