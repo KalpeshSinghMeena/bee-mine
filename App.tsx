@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import confetti from 'canvas-confetti';
-import { Heart, Stars, Sparkles, Music } from 'lucide-react';
+import { Heart, Stars, Sparkles, Music, Info } from 'lucide-react';
 import { Background } from './components/Background';
 import { FloatingNoButton } from './components/FloatingNoButton';
 import { AppState } from './types';
@@ -44,6 +44,19 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center relative overflow-hidden bg-valentine-light text-valentine-dark p-4">
       <Background />
+
+      {/* Info Link - Bottom Left with Reveal Effect */}
+      <a 
+        href="https://Kalpeshmeena.me" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="absolute bottom-4 left-4 z-50 flex items-center text-valentine-pink hover:text-valentine-dark transition-all duration-300 bg-white/50 hover:bg-white/80 backdrop-blur-sm p-3 rounded-full shadow-sm group"
+      >
+        <Info className="w-5 h-5" />
+        <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 ease-in-out whitespace-nowrap opacity-0 group-hover:opacity-100 font-body font-semibold text-sm ml-0 group-hover:ml-2">
+          Kalpeshmeena.me
+        </span>
+      </a>
 
       {appState === AppState.ASKING ? (
         <div className="z-10 flex flex-col items-center text-center space-y-8 animate-in fade-in zoom-in duration-500">
@@ -98,17 +111,10 @@ const App: React.FC = () => {
               I knew you'd say yes!
             </h2>
           </div>
-          
-          <button 
-            onClick={() => window.location.reload()}
-            className="mt-8 text-valentine-pink hover:text-valentine-red underline font-body"
-          >
-            Ask me again?
-          </button>
         </div>
       )}
       
-      <footer className="absolute bottom-4 text-valentine-pink/60 font-body text-sm">
+      <footer className="absolute bottom-4 text-valentine-pink/60 font-body text-sm pointer-events-none">
         Made with ❤️ and Code
       </footer>
     </div>
